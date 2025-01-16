@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sprite {
+  width: 69px;
+  height: 80px;
+  background-image: url("/mario.png");
+  animation: moveDown 1s steps(3) infinite;
+}
+
+@keyframes moveDown {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -220px 0;
+  }
+}
